@@ -1,0 +1,73 @@
+admin/
+└── controller/
+    └── mas/
+        ├── campaign.php
+        ├── segment.php
+        └── ... (altri controller backend)
+└── model/
+    └── mas/
+        ├── campaign.php
+        ├── segment.php
+        └── ... (altri model backend)
+└── view/
+    └── template/
+        └── mas/
+            ├── campaign.twig
+            ├── segment.twig
+            └── ... (altri template backend)
+catalog/
+└── controller/
+    └── mas/
+        └── ... (eventuali controller frontend)
+└── model/
+    └── mas/
+        └── ... (eventuali model frontend)
+└── view/
+    └── template/
+        └── mas/
+            └── ... (eventuali template frontend)
+
+
+system/
+└── library/
+    └── mas/
+        ├── core/
+        │   ├── MAS.php                  # Classe principale della suite
+        │   ├── Workflow.php             # Gestione workflow di automazione
+        │   ├── Segment.php              # Gestione segmenti utenti
+        │   ├── Campaign.php             # Gestione campagne
+        │   ├── LandingPage.php          # Gestione landing page
+        │   ├── ProviderManager.php      # Gestione dei provider
+        │   ├── AutomationTrigger.php    # Gestione trigger di automazione
+        │   ├── AutomationAction.php     # Gestione azioni di automazione
+        │   ├── AutomationCondition.php  # Gestione condizioni di automazione
+        │   ├── EventDispatcher.php      # Gestione eventi e notifiche
+        │   ├── ConsentManager.php       # Gestione consensi e preferenze
+        │   └── ReportManager.php        # Gestione report e analisi
+        ├── provider/
+        │   ├── email/
+        │   │   └── ...                  # Provider email (Twilio, SendGrid, ecc.)
+        │   ├── sms/
+        │   │   └── ...                  # Provider SMS (Twilio, ecc.)
+        │   ├── push/
+        │   │   └── ...                  # Provider push (Firebase, ecc.)
+        │   ├── ai/
+        │   │   └── ...                  # Provider AI (OpenAI, ecc.)
+        │   └── ...                      # Altri tipi di provider
+        ├── model/
+        │   ├── CampaignModel.php        # Modello dati campagne
+        │   ├── SegmentModel.php         # Modello dati segmenti
+        │   ├── LandingPageModel.php     # Modello dati landing page
+        │   ├── ProviderModel.php        # Modello dati provider
+        │   ├── EventModel.php           # Modello dati eventi
+        │   ├── ConsentModel.php         # Modello dati consensi
+        │   └── ReportModel.php          # Modello dati report
+        ├── helper/
+        │   ├── Logger.php               # Helper per logging
+        │   ├── Utils.php                # Helper per funzioni di utilità
+        │   ├── TemplateHelper.php       # Helper per la gestione dei template
+        │   └── DataHelper.php           # Helper per la manipolazione dei dati
+        └── exceptions/
+            ├── MASException.php         # Eccezione base della suite
+            ├── ProviderException.php     # Eccezione specifica per i provider
+            └── AutomationException.php   # Eccezione specifica per l'automazione

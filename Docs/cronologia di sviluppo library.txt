@@ -1,0 +1,47 @@
+ti suggerisco il seguente ordine di sviluppo dei file core nella library:
+
+FATTI
+core/MAS.php (classe principale della suite, già scritta sopra)
+core/providerManager.php (gestore dei provider)
+core/workflow.php (gestione dei flussi di automazione)
+core/segment.php (gestione dei segmenti utenti)
+core/campaign.php (gestione delle campagne)
+core/landingPage.php (gestione delle landing page)
+core/automationTrigger.php (gestione dei trigger di automazione)
+core/automationAction.php (gestione delle azioni di automazione)
+core/automationCondition.php (gestione delle condizioni di automazione)
+core/baseTrigger.php
+core/baseAction.php
+core/baseCondition.php
+core/eventDispatcher.php (gestione eventi e notifiche)
+core/consentManager.php (gestione consensi e preferenze)
+core/reportManager.php (gestione report e analisi)
+
+DA FARE:
+model/campaignModel.php (modello dati campagne)
+
+model/segmentModel.php (modello dati segmenti)
+
+model/landingPageModel.php (modello dati landing page)
+
+model/providerModel.php (modello dati provider)
+
+model/eventModel.php (modello dati eventi)
+
+model/consentModel.php (modello dati consensi)
+
+model/reportModel.php (modello dati report)
+
+helper/logger.php (helper per logging)
+
+helper/utils.php (helper per funzioni di utilità)
+
+helper/templateHelper.php (helper per la gestione dei template)
+
+helper/dataHelper.php (helper per la manipolazione dei dati)
+
+exceptions/MASException.php (eccezione base della suite)
+
+exceptions/providerException.php (eccezione specifica per i provider)
+
+exceptions/automationException.php (eccezione specifica per l’automazione)
